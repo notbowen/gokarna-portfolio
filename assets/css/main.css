@@ -695,6 +695,10 @@ table td {
 }
 
 @media only screen and (max-width: 480px) { 
+  .timeline {
+    padding: 0;
+  }
+
   .timeline__header {
     flex-direction: column;
     margin-bottom: 10px;
@@ -759,6 +763,7 @@ table td {
 .timeline__item {
 	position: relative;
 	padding-bottom: 2.25em;
+  font: 1em / 1.5;
 }
 
 .timeline__item:not(:last-child):before {
@@ -767,7 +772,7 @@ table td {
 	display: block;
 	position: absolute;
 	top: 1em;
-	left: 61px;
+  left: 3.5em;
 	width: 0.125em;
 	height: 100%;
 	transform: translateX(-50%);
@@ -778,7 +783,7 @@ table td {
 }
 
 [dir="rtl"] .timeline__item:not(:last-child):before {
-	right: 61px;
+  right: 3.5em;
 	left: auto;
 	transform: translateX(50%);
 }
