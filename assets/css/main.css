@@ -694,6 +694,17 @@ table td {
   gap: 10px;
 }
 
+@media only screen and (max-width: 480px) { 
+  .timeline__header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .timeline__header h1 {
+    margin-bottom: 0;
+  }
+}
+
 .timeline__arrow {
   color: var(--light-text-color);
   font-size: 1.4em;
