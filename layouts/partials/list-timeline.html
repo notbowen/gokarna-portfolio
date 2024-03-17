@@ -1,5 +1,9 @@
-<h1>{{ .Title }}</h1>
 <div id="timeline" class="timeline">
+    <button id="toggleAll{{ .Weight }}" class="timeline__header" data-action="expand" data-action="collapse">
+        <h1>{{ .Title }}</h1>
+        <span>(Click to expand/collapse)</span>
+    </button>
+
     {{ range .Pages }}
         {{ partial "timeline-item.html" . }}
     {{ end }}
