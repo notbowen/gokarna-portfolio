@@ -1,0 +1,37 @@
+<div class="timeline__item">
+    <div class="timeline__item-header">
+        <button
+            class="timeline__arrow"
+            type="button"
+            id="item{{ .Weight }}"
+            aria-labelledby="item{{ .Weight }}-name"
+            aria-expanded="false"
+            aria-controls="item{{ .Weight }}-ctrld"
+            aria-haspopup="true"
+            data-item="{{ .Weight }}"
+        >
+            <svg
+                class="timeline__arrow-icon"
+                viewBox="0 0 24 24"
+                width="24px"
+                height="24px"
+            >
+                <use href="#arrow" />
+            </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item{{ .Weight }}-name" class="timeline__meta">
+            <span class="timeline__date">{{ .Params.header}}</span><br />
+            <strong class="timeline__title">{{ .Title }}</strong>
+        </span>
+    </div>
+    <div
+        class="timeline__item-body"
+        id="item{{ .Weight }}-ctrld"
+        role="region"
+        aria-labelledby="item{{ .Weight }}"
+        aria-hidden="true"
+    >
+        <div class="timeline__item-body-content">{{ .Content }}</div>
+    </div>
+</div>

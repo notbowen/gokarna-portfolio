@@ -99,3 +99,8 @@ video {
   -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
 } 
 */
+
+/* TIMELINE */
+.timeline__arrow {
+  color: var(--dark-text-color);
+}

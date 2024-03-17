@@ -1,0 +1,6 @@
+<h1>{{ .Title }}</h1>
+<div id="timeline" class="timeline">
+    {{ range .Pages }}
+        {{ partial "timeline-item.html" . }}
+    {{ end }}
+</div>
