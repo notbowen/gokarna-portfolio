@@ -694,10 +694,6 @@ table td {
   gap: 10px;
 }
 
-.timeline__header button {
-  z-index: 2;
-}
-
 .timeline__arrow {
   color: var(--light-text-color);
   font-size: 1.4em;
